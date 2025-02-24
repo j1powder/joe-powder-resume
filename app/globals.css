@@ -1,9 +1,18 @@
 @import "tailwindcss";
 
-/* body {
-    background-image: linear-gradient(180deg, #F9F9F9 0%, #1189dd 100%);
-    background-repeat: no-repeat;
-} */
+
+
+
+@keyframes slideIn {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 
 
 #frontend p{
@@ -16,6 +25,38 @@
     box-shadow: 1px 1px 10px 1px rgb(191, 191, 191);
 }
 
+#backend p{
+    margin: 0.5rem;
+    color: black;
+    font-weight: bold;
+    border-radius: 2.5rem;
+    text-align: center;
+    padding: 0.5rem;
+    box-shadow: 1px 1px 10px 1px rgb(191, 191, 191);
+}
+
+#cms p{
+    margin: 0.5rem;
+    color: black;
+    font-weight: bold;
+    border-radius: 2.5rem;
+    text-align: center;
+    padding: 0.5rem;
+    box-shadow: 1px 1px 10px 1px rgb(191, 191, 191);
+}
+
 #topDiv {
-    background-image: linear-gradient(320deg, #F9F9F9 40%, #86b9dd 100%);
+    background-image: linear-gradient(320deg, #F9F9F9 40%, rgb(213, 213, 235) 100%);
+    animation: slideIn 3s ease-in-out;
+}
+
+#profSum {
+    background-image: linear-gradient(100deg, #F9F9F9 0%, rgb(213, 213, 235) 100%);
+    animation: slideIn 2s ease-in-out;
+
+}
+
+#profExp{
+    background-image: linear-gradient(300deg, #F9F9F9 40%, rgb(213, 213, 235) 100%);
+    animation: slideIn 3s ease-in-out;
 }
